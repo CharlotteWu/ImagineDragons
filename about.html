@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="utf-8">
+	   <link rel="stylesheet" href="css/welcome.css" >
+       <link rel="stylesheet" href="css/channel.css" > 
+       <link rel="stylesheet" href="css/bios.css" >  
+       <link rel="stylesheet" href="css/about.css" >   
+        <script src="js/jquery.js"></script> 
+	<script type="text/javascript">
+function loadXMLDoc()
+{
+var xmlhttp;
+if (window.XMLHttpRequest) 
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  { 
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("meg1").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","hello.txt",true);
+xmlhttp.send();
+}
+</script>
+  </head>
+  <body>
+  <div class="content">
+  <header>
+ <img src="image/logo.png">
+ <nav>
+  <a href="about.html">ABOUT</a>
+  <a href="news.html">NEWS</a>
+  <a href="video.html">VIDEO</a>
+  <a href="music.html">MUSIC</a>
+  <a href="bios.html">BIOS</a>
+  <a href="channel.html">HOME</a> 
+ </nav>
+</header>
+  </div>
+  <!--Website&Author-->
+  <div id="box">
+      <div id="about">
+	      <div id="meg">
+	      <p onclick="loadXMLDoc()">Website</p> 
+		  </div>
+		  <div id="meg1"></div>
+      </div>	  
+  </div>
+  <!--footer-->
+<footer>
+   <div class="copyright">
+    <p>&#169Copyright By Charlotte Wu</p>
+    <p>2014</p> 
+   </div>
+</footer>
+<div class="clean"></div>
+  </body>
+</html>

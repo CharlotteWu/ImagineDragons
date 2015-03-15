@@ -1,0 +1,25 @@
+body  
+ {
+	text-align:center; 
+ }
+ 
+ #about
+ {
+     width:600px;
+	 height:500px;
+	 margin-left:auto;
+	 margin-right:auto;
+ }
+ 
+ #meg
+ {
+      margin:0 auto;
+ }
+ 
+ #meg p
+ {
+      margin-left:auto;
+	 margin-right:auto;
+	 margin-top:10px;
+	 font:20px quicksandregular;
+ }

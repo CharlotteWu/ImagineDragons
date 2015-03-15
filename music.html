@@ -1,0 +1,593 @@
+<!DOCTYPE html >
+<html>
+ <head>
+ <meta charset=utf-8" />
+ <link rel="stylesheet" href="css/welcome.css" >
+ <link rel="stylesheet" href="css/channel.css" > 
+ <link rel="stylesheet" href="css/bios.css" >  
+ <link rel="stylesheet" href="css/music.css" >   
+ <script src="js/jquery.js"></script> 
+ <script src="js/func.js"></script>
+ <script language="javascript">
+   
+		  $(function(){
+		   
+		     var  $cover=$(".list ul li");
+			 $cover.click(function(){
+			           lock();
+				 var    index=$cover.index(this);
+				 $("div.area>div")
+				           .eq(index).show()
+						   .siblings().hide();
+			 }) .hover(function(){
+			$(this).addClass("hover");
+		},function(){ 
+			$(this).removeClass("hover");
+		})
+		  })
+ </script>
+ </head>
+ <body>
+ <div class="content">
+ <header>
+ <img src="image/logo.png">
+ <nav>
+  <a href="about.html">ABOUT</a>
+  <a href="news.html">NEWS</a>
+  <a href="video.html">VIDEO</a>
+  <a href="music.html">MUSIC</a>
+  <a href="bios.html">BIOS</a>
+  <a href="channel.html">HOME</a> 
+ </nav>
+</header>
+</div>
+<!--Music's part-->
+<!--Ablum's cover show-->
+ <div id="box" >  <!--The Whole Content-->
+      <div class="list">   <!--The Albums List -->
+	    <header>Albums</header>  
+			    <ul>
+				      <li> 
+					      <div class="cover" >
+						           <img src="image/imaginedragons.jpg">  
+                                   <p>Imagine Dragons</p>
+								    <p>2009</p>
+						  </div>
+					  </li>
+					  <li>
+					     <div class="cover" >
+						         <img src="image/hellandsilence.jpg"> 
+                                   <p>Hell And Silence</p>
+								   <p>2010</p>
+						  </div>
+					  </li>
+					  <li>
+					       <div class="cover" >
+						         <img src="image/itstime.jpg"> 
+                                   <p>It's Time</p>
+								   <p>2011</p>
+						  </div>
+					  </li>
+				 
+				   <li>
+				          <div class="cover" > 
+						         <img src="image/continuedsilence.jpg"> 
+                                   <p>Continued Silence</p>
+								   <p>2012</p>
+						  </div>
+				   </li>
+				   <li>
+				           <div class="cover" >
+						         <img src="image/nightvisions.jpg"> 
+                                   <p>Night Visions</p>
+								   <p>2012</p>
+						  </div>
+				   </li>
+				   <li>
+				           <div class="cover" >
+						         <img src="image/iTunessession.jpg"> 
+                                   <p>iTunes Session</p>
+								   <p>2013</p>
+						  </div>
+				   </li>
+				</ul> 
+	  </div><!--The Albums List -->
+	   <!--Lock bancground-->
+	  	<div class="shadow" ></div>
+ <!--Song list area--> 
+     <div class="area">
+       <div class="song"> 
+	 
+						<p>Name:Imagine Dragons</p>
+						<p>Artist:Imagine Dragons</p>
+						<p>Year:2009</p>  
+				   <a onclick="unlock()">X</a> 
+				  </div>
+	   <!--Song list area--> 
+       <div class="song">
+	     <header>
+	            <div class="showArea">
+				        <img src="image/hellandsilence.jpg">
+						<div class="msg">
+						<p>Name:Hell And Silence</p>
+						<p>Artist:Imagine Dragons</p>
+						<p>Year:2010</p> 
+						</div>
+				   <a onclick="unlock()">X</a>
+				</div>
+			</header>
+				<!--Song List-->
+			 <section>
+				<div class="songlist">
+				<table>
+					      <tr>
+						     <td>
+							       01 All Eyes
+							 </td>
+						      <td>
+							   <audio   controls="controls">
+                                           <source src="music/Hell And Silence/All Eyes.m4a">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       02 I Don't Mind
+							 </td>
+						      <td>
+							   <audio controls="controls">
+                                           <source src="music/Hell And Silence/I Don't Mind.m4a">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       03 Hear Me
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/Hell And Silence/Hear Me.m4a">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       04 Selene
+							 </td>
+						      <td>
+							   <audio controls="controls">
+                                           <source src="music/Hell And Silence/Selene.m4a">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       05 Emma
+							 </td>
+						      <td>
+							   <audio controls="controls" >
+                                           <source src="music/Hell And Silence/Emma.m4a">
+                                </audio>  
+							  </td>
+						  </tr> 
+					  </table> 
+				</div>
+			  </section>
+	   </div>
+	  
+ 
+	      <!--Song list area--> 
+     <div class="area">
+       <div class="song"> 
+	     <header>
+	            <div class="showArea">
+				        <img src="image/itstime.jpg">
+						<div class="msg">
+						<p>Name:It's Time</p>
+						<p>Artist:Imagine Dragons</p>
+						<p>Year:2011</p> 
+						</div>
+				   <a onclick="unlock()">X</a>
+				</div>
+			</header>
+				<!--Song List-->
+			 <section>
+				<div class="songlist">
+				<table>
+					      <tr>
+						     <td>
+							       01 America
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/America.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       02 Amsterdam
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Amsterdam.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       03 It's Time
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/It's Time.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       04 The River
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/The River.mp3">
+                                </audio> 
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       05 Leave Me
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Leave Me.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       06 Pantomime
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Pantomime.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       07 Look How Far We've Come
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Look How Far We've Come.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+					  </table> 
+				</div>
+			  </section>
+	   </div> 
+	   
+	   <!--Song list area--> 
+     <div class="area">
+       <div class="song"> 
+	     <header>
+	            <div class="showArea">
+				        <img src="image/continuedsilence.jpg">
+						<div class="msg">
+						<p>Name:Continued Silence</p>
+						<p>Artist:Imagine Dragons</p>
+						<p>Year:2012</p> 
+						</div>
+				   <a onclick="unlock()">X</a>
+				</div>
+			</header>
+				<!--Song List-->
+			 <section>
+				<div class="songlist">
+				<table>
+					      <tr>
+						     <td>
+							       01 America
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/America.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       02 Amsterdam
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Amsterdam.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       03 It's Time
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/It's Time.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       04 The River
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/The River.mp3">
+                                </audio> 
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       05 Leave Me
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Leave Me.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       06 Pantomime
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Pantomime.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       07 Look How Far We've Come
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Look How Far We've Come.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+					  </table> 
+				</div>
+			  </section>
+	   </div> 
+	   
+   
+	   
+	    <!--Song list area--> 
+     <div class="area">
+       <div class="song"> 
+	     <header>
+	            <div class="showArea">
+				        <img src="image/nightvisions.jpg">
+						<div class="msg">
+						<p>Name:It's Time</p>
+						<p>Artist:Imagine Dragons</p>
+						<p>Year:2011</p> 
+						</div>
+				   <a onclick="unlock()">X</a>
+				</div>
+			</header>
+				<!--Song List-->
+			 <section>
+				<div class="songlist">
+				<table>
+					      <tr>
+						     <td>
+							       01 America
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/America.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       02 Amsterdam
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Amsterdam.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       03 It's Time
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/It's Time.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       04 The River
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/The River.mp3">
+                                </audio> 
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       05 Leave Me
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Leave Me.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       06 Pantomime
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Pantomime.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       07 Look How Far We've Come
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Look How Far We've Come.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+					  </table> 
+				</div>
+			  </section>
+	   </div> 
+	   
+	    <!--Song list area--> 
+     <div class="area">
+       <div class="song"> 
+	     <header>
+	            <div class="showArea">
+				        <img src="image/iTunessession.jpg">
+						<div class="msg">
+						<p>Name:iTunes Session</p>
+						<p>Artist:Imagine Dragons</p>
+						<p>Year:2011</p> 
+						</div>
+				   <a onclick="unlock()">X</a>
+				</div>
+			</header>
+				<!--Song List-->
+			 <section>
+				<div class="songlist">
+				<table>
+					      <tr>
+						     <td>
+							       01 America
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/America.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       02 Amsterdam
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Amsterdam.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       03 It's Time
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/It's Time.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       04 The River
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/The River.mp3">
+                                </audio> 
+							  </td>
+						  </tr>
+						  
+						 <tr>
+						     <td>
+							       05 Leave Me
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Leave Me.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       06 Pantomime
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Pantomime.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+						  
+						  <tr>
+						     <td>
+							       07 Look How Far We've Come
+							 </td>
+						      <td>
+							   <audio  controls="controls">
+                                           <source src="music/It's Time/Look How Far We've Come.mp3">
+                                </audio>  
+							  </td>
+						  </tr>
+					  </table> 
+				</div>
+			  </section>
+	   </div> 
+	   
+	   
+	 </div> 
+	 </div> 
+<!--footer-->
+<footer>
+   <div class="copyright">
+    <p>&#169Copyright By Charlotte Wu</p>
+    <p>2014</p> 
+   </div>
+</footer>
+<div class="clean"></div>
+ </body>
+</html>

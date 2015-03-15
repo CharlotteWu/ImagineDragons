@@ -1,0 +1,4 @@
+1、BIOS界面位置不稳定 缩小界面会发生漂浮
+2、MUSIC中的jq有点问题 调用时位置不正确 
+3、NEWS和ABOUT页面未开始
+4、从WELCOME页面开始查看 按ENTER进入

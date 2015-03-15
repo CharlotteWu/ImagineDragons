@@ -1,0 +1,40 @@
+body  
+ {
+	text-align:center; 
+ }
+ .list 
+ {
+    max-width:1000px;
+	height:800px;  
+	margin-left:auto;
+	margin-right:auto;
+   font:40px quicksandregular;  
+ }
+  .list ul
+ {
+   width:1000px;
+   height:800px; 
+ }
+ 
+ .list  li
+ {
+    float:left; 
+	width:500px;
+ }
+ 
+ .videoshow
+ {  
+   
+	 padding:10px 10px 10px 10px;
+ }
+ 
+ .videoshow video 
+ {
+      display:block; 
+	  width:100%; 
+ }
+ 
+ .videoshow p
+ {
+     font-size:20px;
+ }

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../font/quicksand-regular-webfont.eot');
+    src: url('../font/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quicksand-regular-webfont.woff') format('woff'),
+         url('../font/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../font/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'capture_itregular';
+    src: url('../capture/capture_it-webfont.eot');
+    src: url('../capture/capture_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../capture/capture_it-webfont.woff') format('woff'),
+         url('../capture/capture_it-webfont.ttf') format('truetype'),
+         url('../capture/capture_it-webfont.svg#capture_itregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, input
+var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+    margin:0;
+    padding:0;
+    
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;    
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+body{
+	font-family:arial;
+	 background-size:cover;
+}
+
+#pagebox
+{
+  margin:0 auto;
+  position: relative;
+}
+ 
+	
+#gallery a img
+ {
+     position:absolute;  
+	 width:1366px;
+	 height:643px;
+}
+
+ 
+
+ #enter a:link,a:visited
+ {
+   font-size:50px;
+   color:#D90E0E; 
+   font-family:Kalinga; 
+   position:absolute;
+   left:600px;
+   top:550px;
+   text-decoration:none;
+ }
+ 
+	
+.clean
+{
+  clear:both;
+}

@@ -1,0 +1,43 @@
+ 
+HTML {
+	MIN-WIDTH: 100%; HEIGHT: 100%
+}
+BODY {
+	MIN-WIDTH: 100%; HEIGHT: 100%
+}
+img {
+	border:none
+}
+ 
+#picShow{
+	  OVERFLOW: hidden; WIDTH:1200px; POSITION: absolute;  HEIGHT: 400px; 
+}
+.imgSlide {
+	 OVERFLOW: hidden; WIDTH: 400px; HEIGHT: 602px; CURSOR: pointer
+}
+	
+#content{
+	MIN-WIDTH: 100%; HEIGHT: 100%; POSITION: relative; OVERFLOW-X: hidden
+}
+ 
+BODY {
+	MIN-WIDTH: 1200px; MIN-HEIGHT: 400px;
+}
+ 
+#picShow {
+	 OVERFLOW: hidden; WIDTH: 1200px; POSITION: absolute; HEIGHT: 602px; 
+}
+.imgSlide {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 400px; HEIGHT: 602px
+}
+.imgSlide * {
+	CURSOR: pointer
+}
+.imgSlide A {
+	DISPLAY: block;  OVERFLOW: hidden; WIDTH: 100%; HEIGHT: 100%
+}
+.imgSlide IMG {
+	DISPLAY: block;  WIDTH: 400px; HEIGHT: 602px
+}
+ 
+
